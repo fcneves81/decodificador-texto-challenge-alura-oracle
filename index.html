@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Decodificador de Texto ONEG4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/84ad54e6ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="https://www.alura.com.br/"><img src="img/Vector.svg" alt="Logotipo da Alura"></a>
+        <h1>Challenge One Decodificador 4</h1>
+    </header>
+    <main>
+
+        <section class="container">
+            
+            <div class="mensagem">
+                
+                <textarea model="input" class="input" id="textoUsuario" placeholder="Digite a mensagem"></textarea>
+
+                <div class="mensagem-info">
+                    
+                    <p class="mensagem-paragrafo">Apenas letras minúsculas e sem acento.</p>
+
+                </div>
+
+                <div class="botoes">
+                
+                    <button class="btn" id="btnCodificar">Criptografar</button>
+                    <button class="btn" id="btnDescodificar">Descriptografar</button>
+
+                </div>
+
+            </div>
+
+            <div class="resposta">
+                
+                <textarea model="input" class="input-2" id="respUsuario" placeholder="Nenhum texto"></textarea>
+                <img class="resposta-img" id="ativo" src="img/aguardando.svg" alt="Imagem de uma pessoa com uma lupa olhando para um diamante">
+                <h2 class="resposta-texto" id="texto1">Nenhuma mensagem encontrada</h2>
+                <p class="resposta-paragrafo" id="texto2">Digite um texto ou palavra que você deseja criptografar ou descriptografar.</p>
+                
+                <div class="botoes">
+                    <button class="btn-copiar" id="copiar">Copiar</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Fernando Camargo - 2022</p>
+
+        <div class="contato">
+            <ul>
+                <li><a href="https://github.com/fcneves81" target="_blank"><i class="fa-brands fa-square-github" class="link-contato"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/fernandojns/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/@vemprogramar" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/fernandojns" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/fcamargo81/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/codificador.js"></script>
+</body>
+
+</html>
